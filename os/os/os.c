@@ -4,7 +4,7 @@
 int main()
 {
     printf("Process 1:\n"); //comments
-    PROCESS_INFORMATION pi;
+    PROCESS_INFORMATION pi; //another comment
     STARTUPINFO si;
     ZeroMemory(&si, sizeof(si));
     si.cb = sizeof(si);
