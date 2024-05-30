@@ -3,14 +3,14 @@
 
 int main()
 {
-    printf("Process 1:\n");
+    printf("Process 1:\n"); //comments
     PROCESS_INFORMATION pi;
     STARTUPINFO si;
     ZeroMemory(&si, sizeof(si));
     si.cb = sizeof(si);
     if (!CreateProcessA(NULL, "\"C:/Windows/write.exe\"", NULL, NULL, FALSE, 8, NULL, NULL, &si, &pi))
     {
-        printf("“Process Creation Error\n");
+        printf("ï¿½Process Creation Error\n");
     }
 
     SetPriorityClass(pi.hProcess, HIGH_PRIORITY_CLASS);
@@ -37,7 +37,7 @@ int main()
 
     if (!CreateProcessA(NULL, "cmd", NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &si1, &pi1))
     {
-        printf("“Process Creation Error\n");
+        printf("ï¿½Process Creation Error\n");
     }
 
     SetPriorityClass(pi1.hProcess, IDLE_PRIORITY_CLASS);
