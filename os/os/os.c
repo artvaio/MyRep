@@ -3,8 +3,8 @@
 
 int main()
 {
-    printf("Process 1:\n"); //comments
-    PROCESS_INFORMATION pi; //another comment
+    printf("Process 1:\n"); //comments //second comments
+    PROCESS_INFORMATION pi;
     STARTUPINFO si;
     ZeroMemory(&si, sizeof(si));
     si.cb = sizeof(si);
